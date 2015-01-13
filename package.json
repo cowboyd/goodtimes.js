@@ -1,0 +1,28 @@
+{
+  "name": "goodtimes",
+  "version": "0.1.0",
+  "description": "A nice model to traverse all of time. Literally.",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --singleRun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cowboyd/goodtimes.js"
+  },
+  "author": "Charles Lowell <cowboyd@frontside.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cowboyd/goodtimes.js/issues"
+  },
+  "homepage": "https://github.com/cowboyd/goodtimes.js",
+  "devDependencies": {
+    "chai-datetime": "^1.3.1",
+    "karma": "^0.12.31",
+    "karma-6to5-preprocessor": "^1.0.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "karma-sinon-chai": "^0.2.0",
+    "mocha": "^2.1.0"
+  }
+}
