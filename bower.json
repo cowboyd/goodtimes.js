@@ -1,0 +1,23 @@
+{
+  "name": "goodtimes.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cowboyd/goodtimes.js",
+  "authors": [
+    "Charles Lowell <cowboyd@frontside.io>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "~2.9.0"
+  },
+  "devDependencies": {
+    "system.js": "~0.11.1"
+  }
+}

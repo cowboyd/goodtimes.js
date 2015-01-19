@@ -15,37 +15,49 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'node_modules/6to5/browser.js',
       'node_modules/chai-datetime/chai-datetime.js',
       'bower_components/moment/moment.js',
-      'lib/**/*.js',
-      'spec/**/*.js'
+      'vendor/6to5-runtime.js',
+      'vendor/es6-module-loader-6to5.src.js',
+      'init.js',
+      {
+        pattern: "bower_components/**/*.js",
+        served: true,
+        included: false
+      },
+      {
+        pattern: "bower_components/**/*.map",
+        served: true,
+        included: false
+      },
+      {
+        pattern: "vendor/**/*.js",
+        served: true,
+        included: false
+      },
+      {
+        pattern: "vendor/**/*.map",
+        served: true,
+        included: false
+      },
+      {
+        pattern: "lib/**/*.js",
+        served: true,
+        included: false,
+        watched: true
+      },
+      {
+        pattern: "spec/**/*.js",
+        served: true,
+        included: false,
+        watched: true
+      }
     ],
-
 
     // list of files to exclude
     exclude: [
     ],
-
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      'lib/**/*.js': ['6to5'],
-      'spec/**/*.js': ['6to5']
-    },
-    '6to5Preprocessor': {
-      options: {
-        sourceMap: 'inline',
-        modules: 'ignore'
-      }
-      // filename: function(file) {
-      //   return file.originalPath.replace(/\.js$/, '.es5.js');
-      // },
-      // sourceFileName: function(file) {
-      //   return file.originalPath;
-      // }
-    },
-
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
